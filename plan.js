@@ -8,12 +8,12 @@ toggle.addEventListener("click", () => {
 
     console.log(color)
 
-    if(color === "rgb(128, 128, 128)"){
-        monthly.style.color = "gray";
-        yearly.style.color = "black";
-    } else if (color === "rgb(186, 218, 85)"){
-        monthly.style.color = "black";
-        yearly.style.color = "gray";
+    if(color === "rgb(128, 128, 128)") {
+        monthly.style.color = "hsl(231, 11%, 63%)";
+        yearly.style.color = "hsl(213, 96%, 18%)";
+    } else if (color === "rgb(2, 41, 90)") {
+        monthly.style.color = "hsl(213, 96%, 18%)";
+        yearly.style.color = "hsl(231, 11%, 63%)";
     }
 
 })

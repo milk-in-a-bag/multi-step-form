@@ -55,16 +55,6 @@ a{
     color: hsl(231, 11%, 63%);
 }
 
-input{
-    width: 50vw;
-    height: 50px;
-    margin: 5px 0 50px 0;
-    outline: none;
-    border: 1px solid #000;
-    border-radius: 5px;
-    opacity: 40%;
-}
-
 .step{
     letter-spacing: 3px;
 }
@@ -90,92 +80,97 @@ input{
     color: hsl(213, 96%, 18%);
 }
 
+
 /*main section styles*/
 
 .cards{
     width: 50vw;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
     margin-bottom: 50px;
 }
 
 .card{
-    display: flex;
-    flex-direction: column;
-    gap: 100px;
+    height: 35vh;
+    display: grid;
+    grid-template-rows: 3fr 1fr 1fr;
     border: 1px solid #ccc;
-    padding: 10px;
+    padding: 30px;
     border-radius: 10px;
+    align-items: center;
     cursor: pointer;
 }
 
-.card:hover{
-    border: 1px solid hsl(213, 96%, 18%);
-}
-
-/*.card:{
-    background-color: hsl(231, 11%, 63%);
-}*/
-
-.plan{
-    margin-bottom: 5px;
+.arcade{
     color: hsl(213, 96%, 18%);
     font-weight: bold;
 }
 
-.price{
+.change{
     color: hsl(231, 11%, 63%);
 }
 
-.billing{
+.change:hover{
+    color: hsl(243, 100%, 62%);
+    text-decoration: underline;
+}
+
+.first{
+    font-weight: bold;
+}
+
+.selected-plan{
     display: flex;
-    width: 50vw;
-    height: 70px;
-    background-color: #ccc;
-    gap: 50px;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    border-radius: 15px;
+    align-self: self-start;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 30px;
 }
 
-input[type="checkbox"]{
-    height: 0;
-    width: 0;
-    visibility: hidden;
+.selected-plan p{
+    margin-bottom: 10px;
 }
 
-label{
-    cursor: pointer;
-    text-indent: -9999px;
-    width: 60px;
-    height: 30px;
-    background: gray;
-    display: block;
-    border-radius: 100px;
-    position: relative;
-    bottom: 33px;
+.online-service{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: self-start;
 }
 
-.toggle-switch label::after{
-    content: "";
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    width: 20px;
-    height: 20px;
-    background: #fff;
-    border-radius: 90px;
-    transition: 0.3s;
+.online-service p{
+    color: hsl(231, 11%, 63%);
 }
 
-input:checked + label{
-    background: hsl(213, 96%, 18%);
+.larger-storage{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-input:checked + label::after{
-    left: calc(100% - 5px);
-    transform: translateX(-100%);
+.larger-storage p{
+    color: hsl(231, 11%, 63%);
+}
+
+.total{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 35px;
+}
+
+.price{
+    display: flex;
+    justify-content: end;
+    color: hsl(213, 96%, 18%) !important;
+}
+
+.monthly-total{
+    color: hsl(231, 11%, 63%);
+}
+
+.total-price{
+    color: hsl(243, 100%, 62%);
+    font-weight: bold;
+    font-size: larger;
 }
 
 .back{
@@ -200,12 +195,6 @@ input:checked + label::after{
     border: none;
 }
 
-.monthly{
-    color: hsl(213, 96%, 18%);
-    font-weight: bold;
-}
-
-.yearly{
-    color: hsl(231, 11%, 63%);
-    font-weight: bold;
+.next:active{
+    background-color: hsl(243, 100%, 62%);
 }

@@ -4,18 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="summary.css">
+    <script src="summary.js" defer></script>
     <title>Document</title>
 </head>
 <body>
     <section class="sidebar">
         <div class="sidebar-container">
-
             <a href="index.html">
                 <div class="number-one">
                     <div class="number">
-                        <h1 class="numbering uno">1</h1>
+                        <h1 class="numbering">1</h1>
                     </div>
                     <div class="info">
                         <p class="sidebar-heading">Step 1</p>
@@ -51,7 +50,7 @@
             <a href="summary.html">
                 <div class="number-one">
                     <div class="number">
-                        <h1 class="numbering">4</h1>
+                        <h1 class="numbering uno">4</h1>
                     </div>
                     <div class="info">
                         <p class="sidebar-heading">Step 4</p>
@@ -63,21 +62,43 @@
     </section>
 
     <section class="content">
-        <h1 class="heading">Personal info</h1>
-        <p class="paragraph">Please provide your name, email address and phone number.</p>
+        <h1 class="heading">Finishing up</h1>
+        <p class="paragraph">Double-check everything looks OK before confirming</p>
 
-        <form action="">
-            <label for="name">Name</label><br>
-            <input type="text" id="name" name="your-name" required><br>
+        <div class="cards">
+            <div class="card">
+                <div class="selected-plan">
+                    <div>
+                        <p class="arcade">Arcade (Monthly)</p>
+                        <a href="#" class="change">Change</a>
+                    </div>
+    
+                    <div>
+                        <p class="price first">$9/mo</p>
+                    </div>
+                </div>
+            
+                <div class="online-service">
+                    <p>Online service</p>
+                    <p class="price">+$1/mo</p>
+                </div>
 
-            <label for="email">Email Address</label><br>
-            <input type="text" id="email" name="email-address" required><br>
+                <div class="larger-storage">
+                    <p>Larger storage</p>
+                    <p class="price">+$2/mo</p>
+                </div>
+            </div>            
+        </div>
 
-            <label for="number">Phone Number</label><br>
-            <input type="number" id="number" name="phone-number" required><br>
+        <div class="total">
+            <div class="monthly-total">Total (per month)</div>
+            <div class="total-price">+$12/mo</div>
+        </div>
 
-            <button type="submit">Next step</button>
-        </form>
+        <div class="buttons">
+            <button class="back">Go back</button>
+            <a href="thank.html"><button class="next">Next step</button></a>
+        </div>
     </section>
 
 </body>
