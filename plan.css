@@ -77,6 +77,9 @@ input{
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
+    background-color: hsl(213, 96%, 18%);
+    color: #fff;
+    border: none;
 }
 
 .uno{
@@ -132,7 +135,7 @@ input{
     display: flex;
     width: 50vw;
     height: 70px;
-    background-color: #ccc;
+    background-color: hsl(231, 100%, 99%);
     gap: 50px;
     justify-content: center;
     align-items: center;
@@ -192,12 +195,6 @@ input:checked + label::after{
 
 .back:hover{
     color: hsl(213, 96%, 18%);
-}
-
-.next{
-    background-color: hsl(213, 96%, 18%);
-    color: #fff;
-    border: none;
 }
 
 .monthly{

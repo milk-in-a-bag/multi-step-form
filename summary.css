@@ -92,11 +92,11 @@ a{
     height: 35vh;
     display: grid;
     grid-template-rows: 3fr 1fr 1fr;
-    border: 1px solid #ccc;
     padding: 30px;
     border-radius: 10px;
     align-items: center;
     cursor: pointer;
+    background-color: hsl(231, 100%, 99%);
 }
 
 .arcade{
