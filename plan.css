@@ -7,7 +7,7 @@
     font-family: Ubuntu;
 }
 
-body{
+.main-section{
     display: flex;
     margin: 15px 30px;
 }
@@ -117,10 +117,6 @@ input{
     border: 1px solid hsl(213, 96%, 18%);
 }
 
-/*.card:{
-    background-color: hsl(231, 11%, 63%);
-}*/
-
 .plan{
     margin-bottom: 5px;
     color: hsl(213, 96%, 18%);
@@ -205,4 +201,82 @@ input:checked + label::after{
 .yearly{
     color: hsl(231, 11%, 63%);
     font-weight: bold;
+}
+
+@media  screen and (max-width: 390px){
+    .main-section{
+        flex-direction: column;
+        margin: 0;
+        background-color: hsl(217, 100%, 97%);
+    }
+
+    .sidebar{
+        width: 100%;
+        height: 25vh;
+        background-size: cover;
+        background-repeat: repeat;
+        background-position: center;
+        display: grid;
+        place-items: center;    
+    }
+
+    .sidebar-container{
+        display: flex;
+        width: 50%;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .info{
+        display: none;
+    }
+
+    .content{
+        width: 85vw;
+        margin: auto;
+        position: relative;
+        bottom: 80px;
+        padding: 20px;
+        border-radius: 10px;  
+        background-color: #fff;
+    }
+
+    .cards{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .card{
+        gap: 10px;
+        flex-direction: row;
+    }
+
+    .heading{
+        margin: 10px 0;
+    }
+
+    .paragraph{
+        margin-bottom: 20px;
+    }
+
+    .billing{
+        width: 90%;
+        gap: 20px;
+        margin: auto;
+        height: 40px;
+    }
+
+    .bill{
+        position: relative;
+        top: 190px;
+    }
+
+
+    .next{
+        position: relative;
+        left: 200px;
+    }
 }

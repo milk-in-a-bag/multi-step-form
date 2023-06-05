@@ -9,113 +9,120 @@
     <title>Document</title>
 </head>
 <body>
-    <section class="sidebar">
-        <div class="sidebar-container">
-            <a href="index.html">
+    <section class="main-section">
+        <section class="sidebar">
+            <div class="sidebar-container">
+                <a href="index.html">
+                    <div class="number-one">
+                        <div class="number">
+                            <h1 class="numbering">1</h1>
+                        </div>
+                        <div class="info">
+                            <p class="sidebar-heading">Step 1</p>
+                            <h3 class="step">Your info</h3>
+                        </div>
+                    </div>
+                </a>
+        
                 <div class="number-one">
                     <div class="number">
-                        <h1 class="numbering">1</h1>
+                        <h1 class="numbering uno">2</h1>
                     </div>
                     <div class="info">
-                        <p class="sidebar-heading">Step 1</p>
-                        <h3 class="step">Your info</h3>
+                        <p class="sidebar-heading">Step 2</p>
+                        <h3 class="step">Select plan</h3>
                     </div>
                 </div>
-            </a>
-    
-            <div class="number-one">
-                <div class="number">
-                    <h1 class="numbering uno">2</h1>
-                </div>
-                <div class="info">
-                    <p class="sidebar-heading">Step 2</p>
-                    <h3 class="step">Select plan</h3>
-                </div>
-            </div>
-    
-            <a href="addons.html">
+        
+                <a href="addons.html">
+                    <div class="number-one">
+                        <div class="number">
+                            <h1 class="numbering">3</h1>
+                        </div>
+                        <div class="info">
+                            <p class="sidebar-heading">Step 3</p>
+                            <h3 class="step">Add-ons</h3>
+                        </div>
+                    </div>
+                </a>
+        
                 <div class="number-one">
                     <div class="number">
-                        <h1 class="numbering">3</h1>
+                        <h1 class="numbering">4</h1>
                     </div>
                     <div class="info">
-                        <p class="sidebar-heading">Step 3</p>
-                        <h3 class="step">Add-ons</h3>
+                        <p class="sidebar-heading">Step 4</p>
+                        <h3 class="step">Summary</h3>
                     </div>
                 </div>
-            </a>
+            </div>
+        </section>
     
-            <div class="number-one">
-                <div class="number">
-                    <h1 class="numbering">4</h1>
-                </div>
-                <div class="info">
-                    <p class="sidebar-heading">Step 4</p>
-                    <h3 class="step">Summary</h3>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="content">
-        <h1 class="heading">Select your plan</h1>
-        <p class="paragraph">You have the option for monthly or yearly billing</p>
-
-        <div class="cards">
-            <div class="card">
-                <div class="icon">
-                    <img src="./assets/images/icon-arcade.svg" alt="">
-                </div>
-
-                <div class="plan-and-pricing">
-                    <p class="plan">Arcade</p>
-                    <p class="price">$9/mo</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="icon">
-                    <img src="./assets/images/icon-advanced.svg" alt="">
-                </div>
-                
-                <div class="plan-and-pricing">
-                    <p class="plan">Advanced</p>
-                    <p class="price">$12/mo</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="icon">
-                    <img src="./assets/images/icon-pro.svg" alt="">
-                </div>
-                
-                <div class="plan-and-pricing">
-                    <p class="plan">Pro</p>
-                    <p class="price">$15/mo</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="billing">
+        <section class="content">
             <div>
-                <p class="monthly">Monthly</p>
+                <h1 class="heading">Select your plan</h1>
+                <p class="paragraph">You have the option for monthly or yearly billing</p>
+    
+                <div class="cards">
+                    <div class="card">
+                        <div class="icon">
+                            <img src="./assets/images/icon-arcade.svg" alt="">
+                        </div>
+    
+                        <div class="plan-and-pricing">
+                            <p class="plan">Arcade</p>
+                            <p class="price">$9/mo</p>
+                        </div>
+                    </div>
+    
+                    <div class="card">
+                        <div class="icon">
+                            <img src="./assets/images/icon-advanced.svg" alt="">
+                        </div>
+                    
+                        <div class="plan-and-pricing">
+                            <p class="plan">Advanced</p>
+                            <p class="price">$12/mo</p>
+                        </div>
+                    </div>
+    
+                    <div class="card">
+                        <div class="icon">
+                            <img src="./assets/images/icon-pro.svg" alt="">
+                        </div>
+                    
+                        <div class="plan-and-pricing">
+                            <p class="plan">Pro</p>
+                            <p class="price">$15/mo</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="billing">
+                    <div>
+                        <p class="monthly">Monthly</p>
+                    </div>
+        
+                    <div class="toggle-switch">
+                        <input type="checkbox" id="switch">
+                        <label class="label" for="switch">Toggle</label>
+                    </div>
+        
+                    <div>
+                        <p class="yearly">Yearly</p>
+                    </div>
+                </div>
+
             </div>
 
-            <div class="toggle-switch">
-                <input type="checkbox" id="switch">
-                <label class="label" for="switch">Toggle</label>
+            <div class="bill">        
+                <div class="buttons">
+                    <button class="back">Go back</button>
+                    <button class="next">Next step</button>
+                </div>
             </div>
-
-            <div>
-                <p class="yearly">Yearly</p>
-            </div>
-        </div>
-
-        <div class="buttons">
-            <button class="back">Go back</button>
-            <button class="next">Next step</button>
-        </div>
+    
+        </section>
     </section>
-
 </body>
 </html>
