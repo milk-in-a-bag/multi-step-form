@@ -78,8 +78,19 @@ input{
     border-radius: 5px;
     cursor: pointer;
     background-color: hsl(213, 96%, 18%);
-    color: #fff;
     border: none;
+}
+
+.next a{
+    color: #fff;
+}
+
+.back a{
+    color: hsl(231, 11%, 63%);
+}
+
+.back a:hover{
+    color: hsl(213, 96%, 18%);
 }
 
 .uno{
@@ -204,10 +215,14 @@ input:checked + label::after{
 }
 
 @media  screen and (max-width: 390px){
+    body{
+        overflow: hidden;
+    }
     .main-section{
         flex-direction: column;
         margin: 0;
         background-color: hsl(217, 100%, 97%);
+        height: 90vh;
     }
 
     .sidebar{
@@ -235,7 +250,7 @@ input:checked + label::after{
         width: 85vw;
         margin: auto;
         position: relative;
-        bottom: 80px;
+        bottom: 110px;
         padding: 20px;
         border-radius: 10px;  
         background-color: #fff;
@@ -256,6 +271,7 @@ input:checked + label::after{
 
     .heading{
         margin: 10px 0;
+        font-size: 35px;
     }
 
     .paragraph{
@@ -271,7 +287,7 @@ input:checked + label::after{
 
     .bill{
         position: relative;
-        top: 190px;
+        top: 250px;
     }
 
 
